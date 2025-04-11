@@ -16,12 +16,13 @@
 3. **Capa de Datos (productRepository.js)**:
    - Gestiona el almacenamiento en memoria
    - Realiza operaciones CRUD básicas
-   - Aísla el acceso a datos
 
-## Ventajas de esta estructura:
+## Ventajas respecto a la versión monolítica
 
-- **HTML en capa de presentación**: Cohesión más fuerte entre controladores y vistas
-- **Más monolítica pero organizada**: Todo el frontend está gestionado por Express
-- **Fácil despliegue**: Solo 3 archivos JavaScript principales
-- **Renderizado server-side inicial**: La primera carga viene con datos
-- **Actualización client-side**: Interactividad mediante JavaScript
+1. **Mejor organización**: Código fácil de navegar
+2. **Separación de responsabilidades**: Cada capa tiene un propósito claro
+3. **Facilidad de mantenimiento**: Cambios en una capa no afectan necesariamente a las otras
+4. **Testabilidad**: Cada capa puede ser probada de forma aislada
+5. **Reutilización**: La lógica de negocio y acceso a datos puede ser usada por diferentes interfaces
+6. **Escalabilidad**: Más fácil adaptar o reemplazar componentes individuales
+7. **Trabajo en equipo**: Diferentes desarrolladores pueden trabajar en distintas capas simultáneamente
